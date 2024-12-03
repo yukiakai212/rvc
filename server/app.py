@@ -136,7 +136,7 @@ def localServer(logLevel: str = "critical", key_path: str | None = None, cert_pa
         logger.error(f"[Voice Changer] Web Server Launch Exception, {e}")
 
 
-if __name__ == "MMVCServerSIO":
+if __name__ == "app":
     mp.freeze_support()
 
     voiceChangerManager = VoiceChangerManager.get_instance(voiceChangerParams)
